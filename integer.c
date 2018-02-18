@@ -33,6 +33,10 @@ int compareINTEGER(void *v,void *w) {
     return getINTEGER(v) - getINTEGER(w);
 }
 
+int rcompareINTEGER(void *v,void *w) {
+    return getINTEGER(w) - getINTEGER(v);
+}
+
 void freeINTEGER(void *v) {
     free((INTEGER *) v);
 }
